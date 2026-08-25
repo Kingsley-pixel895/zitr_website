@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>next product</title>
+</head>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+        .logo img{
+            color: black;
+            margin-left: 40px;
+            height: 70px;
+            width: 70px;
+        }
+        .nav-bar{
+            background-color: black;
+            height: 70px;
+        }
+            ul{
+            list-style-type: none;
+            display: flex;
+            position: absolute;
+            margin-left: 800px;
+            top: 20px;
+            } 
+        li{
+            color: white;
+            background-color: black;
+            font-family: Algerian;
+            padding: 5px 20px;
+            font-size: 15px;
+            margin-left: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        li:hover{
+            background-color: transparent;
+            cursor: pointer;
+        }
+            body{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url(images/WhatsApp\ Image\ 2026-08-18\ at\ 09.01.16.jpeg);
+            background-size: cover;
+            background-position: top;
+        }
+         .logo h1{
+            position: absolute;
+            top: 14px;
+            left: 120px;
+            color: white;
+            font-family: ALGERIAN;
+            font-size: 40px;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            text-align: center;
+            color:white;
+        }
+        .title{
+            color: white;
+            font-size: 70px;
+            font-family: Algerian;
+            line-height: 100px;
+            font-weight: bold;
+            height: 100px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+         a{
+            color: white;
+            text-decoration: none;
+         }
+         a:hover{
+            color: red;
+            border-bottom: 2px solid red
+        }
+        .logo a:hover{
+            color: none;
+            border-bottom: none;
+        }
+        .product img{
+            border-radius: 15px;
+            height: 400px;
+            width: 30%;
+            margin: 5% 0 0 5%;
+        }
+        .write-up{
+            color: white;
+            position: absolute;
+            top: 25%;
+            left: 40%;
+        }
+        .write-up #topic{
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+            font-family: algerian;
+        }
+        .write-up h1{
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 20px;
+            font-family: rockwell;
+        }
+        .write-up #page{
+            margin-top: 40px;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .write-up #amount{
+            margin-top: 20px;
+            font-weight: bolder;
+            font-size: 30px;
+         }
+         .btn{
+          display: inline-block;
+            background: black;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            margin-right: 600px; 
+            margin-top: 20px; 
+        }
+
+</style>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/WhatsApp Image 2026-08-18 at 09.01.16.jpeg"></a>
+                    <h1>ZITR</h1>
+            </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about us.html">ABOUT US</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="contact us.html">CONTACT US</a></li>
+                </ul> 
+        </div>
+    </nav>
+    
+    <div class="product">
+     <img src="images/WhatsApp Image 2026-08-17 at 14.36.07.jpeg">
+    </div>
+    <div class="write-up">
+        <p id="topic">ZITR</p>
+        <h1>Black dead end polo</h1>
+        <p id="page">This is a black short-sleeve polo with a white collar and sleeve trims, featuring bold white graphic detailing across the front, sleeves, and back. Finished with statement artwork and a relaxed streetwear fit.</p>
+        <p id="amount"><span>&#8358</span>30,000</p>
+        <a href="product.html" class="btn"> &#8592; Previous product</a> 
+</body>
+</html>

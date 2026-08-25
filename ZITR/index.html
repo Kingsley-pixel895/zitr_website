@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW.ZITR.COM</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .logo img{
+            color: black;
+            margin-left: 40px;
+            height: 70px;
+            width: 70px;
+        }
+        .nav-bar{
+            background-color: black;
+            height: 70px;
+        }
+            ul{
+            list-style-type: none;
+            display: flex;
+            position: absolute;
+            margin-left: 800px;
+            top: 20px;
+            } 
+        li{
+            color: white;
+            background-color: black,;
+            font-family: algerian;
+            padding: 5px 20px;
+            font-size: 15px;
+            margin-left: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        li:hover{
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            text-align: center;
+            color:white;
+        }
+        .title{
+            color: white;
+            font-size: 70px;
+            line-height: 100px;
+            font-weight: bold;
+            height: 100px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .content p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        button{
+            padding: 15px 25px;
+            margin: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            line-spacing:1px;
+            border: 2px solid white;
+            color: white;
+            cursor: pointer;
+            background: linear-gradient(to right, transparent 50%, black 50%);
+            background-size: 200%;
+            background-position: left;
+            transition: background-position 0.5s;
+        }
+        button:hover{
+            background-position: right;
+            color:red;
+        }
+        .slider{
+            color: red;
+            font-family: ALGERIAN;
+            margin-left: 12px;
+            box-sizing: border-box;
+            animation: slider1 6s linear infinite;
+        }
+        @keyframes slider1{
+            0%{
+                margin-top: -400px;
+            }
+            5%{
+                margin-top: -200px;
+            }
+            30%{
+                margin-top: -200px;
+            }
+            35%{
+                margin-top: 0%;
+            }
+            65%{
+                margin-top: 0%;
+            }
+            70%{
+                margin-top: 200px;
+            }
+            100%{
+                margin-top: 200px;
+            }
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url(images/black\ top.jpeg);
+            background-size: cover;
+            background-position: top;
+        }
+        .small-container{
+            max-width: 100px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        #slider{
+            overflow: hidden;
+        }
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0%;
+            left: 0%;
+            animation: 20s slider2 infinite;
+        }
+        #slider figure img{
+            width: 10%;
+            float: left;
+            height: 500px;
+        }
+        @keyframes slider2{
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            45%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -300%;
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;
+            }
+            100%{
+                left: -400%;
+            }
+        }
+       .logo h1{
+            position: absolute;
+            top: 14px;
+            left: 120px;
+            color: white;
+            font-family: ALGERIAN;
+            font-size: 40px;
+        }
+        .ZITR{
+            background: radial-gradient(gray, black);
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+        .small-container{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+        .col-2 img{
+            width: 200px;
+            height: 150px;
+            border-radius: 30%;
+        }
+        .col-2 .zitr-img{
+            padding: 50px;
+        }
+        small{
+            color: black;
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .btn{
+            display: inline-block;
+            background: black;
+            color: white;
+            font-family: ALGERIAN;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+        }
+        .col-2 h1{
+            color: red;
+            font-family: ALGERIAN;
+        }
+        .col-2 p{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .footer{
+            background: black;
+            color: white;
+            font-size: 14px;
+            padding: 6px 0 8px;
+            font-family: Algerian;
+            }
+        .footer p{
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+        .footer h3{
+            color: white;
+            margin-bottom: 20px;
+        }
+        .footer-col-1, .footer-col-2, .footer-col-4{
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        .footer-col-1{
+            flex-basis: 30%;
+        }
+        .footer-col-2{
+            flex: 1;
+            text-align: center;
+        }
+        .footer-col-2 img{
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .footer-col-3, .footer-col-4{
+            flex-basis: 12%;
+        }
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 20px;
+            padding-right: 25px;
+        }
+        .app-logo{
+            margin-top: 20px;
+        }
+        .app-logo img{
+            width: 140px;
+        }
+        .footer hr{
+            border: none;
+            background: white;
+            height: 1px;
+            margin: 20px 0;
+        }
+        .copyright{
+            text-align: center;
+        }
+        #what{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 3%;
+            top: 6%;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+         }
+         a:hover{
+            color: red;
+            border-bottom: 2px solid red
+         }
+         .logo a:hover{
+            color: none;
+            border-bottom: none;
+        }
+    </style>
+    <body>
+        <div class="banner">
+            <nav>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/WhatsApp Image 2026-08-18 at 09.01.16.jpeg"></a>
+                        <h1>ZITR</h1>
+                    </div>
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="about us.html">ABOUT US</a></li>
+                     <li><a href="product.html">PRODUCT</a></li>
+                     <li><a href="contact us.html">CONTACT US</a></li>
+                  </ul> 
+                </div>
+            </nav>
+              <div class="content">
+                   <div class="title">
+                     ZITR is 
+                       <div class="slider">
+                          <div>Fresh</div>
+                          <div>Exquisite</div>
+                          <div>Cozy</div>
+                       </div>
+                   </div>
+                    <p>Zitr is not just a brand, it's a world of fashion.<br> Get your Zitr on</p>
+                    <button type="button"><a href="product.html">Click here for latest release</a></button>              
+              </div>
+        </div>
+        <div class="Categories">
+          <div id="slider">
+        <figure>
+            <img src="images/WhatsApp Image 2026-08-14 at 19.01.01.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-14 at 19.01.02.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-17 at 14.36.09 - Copy.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-14 at 19.01.02.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-17 at 14.36.07.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-17 at 14.36.08.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-14 at 19.01.01.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-17 at 14.36.09 - Copy.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-14 at 19.01.02.jpeg" alt="">
+            <img src="images/WhatsApp Image 2026-08-17 at 14.36.08.jpeg" alt="">
+        </figure>    
+        </div>
+        </div>
+        <div class="ZITR">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/WhatsApp Image 2026-08-17 at 14.36.07.jpeg" class="zitr-img">
+                    </div>
+                    <div class="col-2">
+                        <p> BEST SELLER OF THE YEAR 2026</p>
+                        <h1>ZITR</h1>
+                        <small>A 100% clothing branded top, with colours ranging from black, grey and white and sizes from small to medium to large.</small>
+                        <a href="product.html" class="btn">Shop now &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h1>Download Our App</h1>
+                <p>Download App for Andriod and 10.5 mobile phone</p>
+            
+                 <div class="app-logo">
+                    <img src="images/apple.png">
+                    <img src="images/play.png">
+                    </div>
+                  </div> 
+              <div class="footer-col-2">
+                <img src="images/WhatsApp Image 2026-08-18 at 09.01.16.jpeg">
+                <p>Our purpose is to sustainably make the pleasure and benefits of <b>zitr</b> accesible to many.</p>
+              </div>
+              <div class="footer-col-3">
+              </div>
+              <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <p>
+                  <p>Facebook</p>
+                  <p>Twitter</p>
+                  <p>Instagram</p>
+                  <p>Youtube</p>
+                </p>
+              </div>
+              </div>
+              <hr>
+              <p class="copyright">Copyright 2026 KINGSLEY</p>
+              </div>
+            </div>
+    </body>
+</html>
